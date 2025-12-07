@@ -15,17 +15,17 @@ stages:
     outs:
     - path: data/processed_data
       hash: md5
-      md5: de2f53120ddd8189fa9c650bf029e3c8.dir
-      size: 330849
-      nfiles: 4
+      md5: f0f83f6c416b023b8e62ee64d5fe0e91.dir
+      size: 628585
+      nfiles: 7
   normalize:
     cmd: python models/data/normalize.py
     deps:
     - path: data/processed_data
       hash: md5
-      md5: 5296afa19fd179aea4bb68689518f7d6.dir
-      size: 615372
-      nfiles: 6
+      md5: f0f83f6c416b023b8e62ee64d5fe0e91.dir
+      size: 628585
+      nfiles: 7
     - path: models/data/normalize.py
       hash: md5
       md5: b84ee569cec3592c6036551026c6777a
@@ -35,9 +35,9 @@ stages:
     deps:
     - path: data/processed_data
       hash: md5
-      md5: 5296afa19fd179aea4bb68689518f7d6.dir
-      size: 615372
-      nfiles: 6
+      md5: f0f83f6c416b023b8e62ee64d5fe0e91.dir
+      size: 628585
+      nfiles: 7
     - path: models/models/grid_search.py
       hash: md5
       md5: 04a6be707cc830c014d3d602c1fc0a4b
@@ -47,9 +47,9 @@ stages:
     deps:
     - path: data/processed_data
       hash: md5
-      md5: 5296afa19fd179aea4bb68689518f7d6.dir
-      size: 615372
-      nfiles: 6
+      md5: f0f83f6c416b023b8e62ee64d5fe0e91.dir
+      size: 628585
+      nfiles: 7
     - path: models/models/best_params.pkl
       hash: md5
       md5: befb70a6ea13ae09803dfd824e91f32f
